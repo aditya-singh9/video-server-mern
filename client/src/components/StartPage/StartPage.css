@@ -1,0 +1,254 @@
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  padding-left: 11%;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-image: linear-gradient(
+    to right bottom,
+    #ffffff,
+    #d5eaff,
+    #87def9,
+    #08d1ce,
+    #08bd80
+  );
+}
+
+nav {
+  margin-top: 40px;
+}
+
+.center {
+  padding-left: 20px;
+}
+
+span.green {
+  color: #079163;
+  font-weight: 700;
+}
+
+p.heading {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/studylurb.appspot.com/o/bgimgs%2Ficon.png?alt=media&token=d42e0327-1664-47a3-9e83-51b6d79886ac")
+    no-repeat;
+  padding-top: 5px;
+  padding-left: 65px;
+  color: rgb(218, 218, 218);
+  font-weight: 700;
+  font-size: 30px;
+}
+
+p.tarif {
+  padding-top: 50px;
+  color: rgb(218, 218, 218);
+  font-size: 50px;
+  font-weight: 700;
+  bottom: 10px;
+}
+
+button.start {
+  background-color: #08bd80;
+  border: 1px solid #08bd80;
+  border-radius: 5px;
+  height: 50px;
+  width: 190px;
+  color: white;
+  font-size: large;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+span.sub {
+  margin-top: 400px;
+  font-size: 30px;
+  font-weight: 500;
+  color: black;
+}
+
+.subu {
+  padding-top: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #9aafbf;
+}
+
+div.extras {
+  display: flex;
+  height: 150px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+div.extra {
+  margin: 1em;
+  margin-top: 50px;
+  box-shadow: -1px -1px 10px 0px rgba(43, 43, 43, 0.75);
+  border-radius: 10px;
+  width: 400px;
+  background-color: rgb(255, 245, 225);
+  height: 25em;
+  text-align: center;
+}
+
+p.head {
+  font-weight: 500;
+  font-size: 20px;
+  color: #9aafbf;
+}
+
+.bubbles img {
+  width: 50px;
+  animation: bubble 14s linear infinite;
+}
+
+.bubbles {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: -70;
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-160vh);
+    opacity: 0;
+  }
+}
+
+.bubbles img:nth-child(1) {
+  animation-delay: 2s;
+}
+.bubbles img:nth-child(2) {
+  animation-delay: 1s;
+}
+.bubbles img:nth-child(3) {
+  animation-delay: 3s;
+}
+.bubbles img:nth-child(4) {
+  animation-delay: 4.5s;
+}
+.bubbles img:nth-child(5) {
+  animation-delay: 3s;
+}
+.bubbles img:nth-child(6) {
+  animation-delay: 6s;
+}
+.bubbles img:nth-child(7) {
+  animation-delay: 7s;
+}
+
+img.ei {
+  display: block;
+  padding-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 50%;
+}
+
+a#subsubsub {
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 400;
+  color: #9aafbf;
+}
+
+#t {
+  animation-name: text;
+  animation-duration: 1.75s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+#s {
+  padding-top: 30px;
+  transform: translateX(-10000px);
+  animation-name: text;
+  animation-duration: 1.75s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.25s;
+  animation-fill-mode: forwards;
+}
+
+#subsub {
+  transform: translateX(-900px);
+  animation-delay: 0.5s;
+  animation-name: text;
+  animation-duration: 1.75s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+#subsubsub {
+  transform: translateX(-900px);
+  animation-delay: 0.5s;
+  animation-name: text;
+  animation-duration: 2.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes text {
+  from {
+    transform: translateX(-900px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    text-align: center;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
+  nav {
+    margin-top: 0px;
+  }
+}
+
+.svg {
+  position: relative;
+  transform: translate3d(300px, -600px, 0px);
+  width: 300px;
+  height: 500px;
+  z-index: 1000;
+}
+
+.svg {
+  animation: main 1.5s ease-in-out;
+}
+
+@keyframes main {
+  from {
+    transform: translate3d(-1000px, -650px, 0px);
+  }
+  to {
+    transform: translate3d(450px, -650px, 0px);
+  }
+}

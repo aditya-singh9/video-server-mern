@@ -1,0 +1,19 @@
+#login .container #login-row #login-column #login-box #login-form {
+  padding: 20px;
+  color: #ccc;
+}
+
+#login-column {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.footer {
+  margin-top: 100px;
+  text-align: center;
+  color: #ccc;
+}
+
+.god {
+  color: #ccc;
+}
