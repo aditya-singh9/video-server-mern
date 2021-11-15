@@ -38,6 +38,9 @@ Make sure that Nodejs is installed in your system.
 8. And then type `npm start `
 9. Then the app will start in your browser.
 
+### ToDo
+1. Fix UI 😅
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
